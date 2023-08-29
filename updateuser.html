@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="ISO-8859-1">
+    <title>User Update</title>
+</head>
+<body>
+    <!-- HTML form for user input -->
+    <form action="update_user.jsp" method="post">
+        <label for="id">User ID:</label>
+        <input type="text" name="id" id="id"><br>
+        <label for="name">Name:</label>
+        <input type="text" name="name" id="name"><br>
+        <label for="mstatus">Marital Status:</label>
+        <input type="text" name="mstatus" id="mstatus"><br>
+        <label for="pwd">Password:</label>
+        <input type="password" name="pwd" id="pwd"><br>
+        <input type="submit" value="Update">
+    </form>
+    
+    <!-- Placeholder for displaying results -->
+    <div id="result">
+        <!-- Result messages will appear here -->
+    </div>
+    
+    <script>
+        // Simulated JavaScript to update the result area (for demonstration purposes)
+        var resultDiv = document.getElementById("result");
+        
+        // Simulate successful update
+        var successMessage = document.createElement("p");
+        successMessage.textContent = "User Updated Successfully";
+        successMessage.style.color = "green";
+        
+        // Simulate user not found
+        var notFoundMessage = document.createElement("p");
+        notFoundMessage.textContent = "User ID Not Found";
+        notFoundMessage.style.color = "red";
+        
+        // Display success or not found messages (replace with actual logic)
+        // For actual functionality, you'll need server-side code.
+        var n = 1; // Simulate successful update (1) or not found (0)
+        if (n > 0) {
+            resultDiv.appendChild(successMessage);
+        } else {
+            resultDiv.appendChild(notFoundMessage);
+        }
+    </script>
+</body>
+</html>

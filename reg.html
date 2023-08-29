@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="style.css">
+<title>Online Health & Nutrition Consultnacy</title>
+</head>
+<style>
+    body {
+      background-image: url("images/img12.jpg");
+      background-size: cover;
+      background-position: center;
+    }
+    .container {
+            width: 300px;
+            margin: 0 auto;
+            margin-top: 100px;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.8);
+            border-radius: 10px;
+            text-align: center;
+          }
+    </style>
+<body >
+    <div class="menu-bar">  
+        <ul>
+            <li ><a href="index.html">Home</a></li>
+            <li><a href="#"><a href="about.html">ABOUT</a></a>
+            <li><a href="#"></a><a href="login.html">Login</a></a></li>
+            <li class="active"><a href="#"></a>
+              <a href="reg.html">Registration</a>
+            </li>
+            
+            <li><a href="#"></a>
+                <a href="contact.html">Contact</a>
+            </li>
+            
+        </ul> 
+      </div>
+<div class="container">
+<h2 align="center"><u>Registration</u></h2>
+<form method="post" action="insertuser.jsp">
+<table align="center">
+<tr>
+</tr>
+<tr><td></td></tr>
+<tr>
+    <td><b>Name</b></td>
+    <td>
+        <input type="text" name="name" required>
+    </td>
+</tr>
+<tr><td></td></tr>
+<tr>
+    <td><b>Select Gender</b></td>
+    <td>
+        Male<input type="radio" name="gender" value="male" required>
+        Female<input type="radio" name="gender" value="female" required>
+    </td>
+</tr>
+<tr><td></td></tr>
+<tr>
+    <td><b>Date Of Birth</b></td>
+    <td>
+        <input type="date" name="dob" required>
+    </td>
+</tr>
+<tr><td></td></tr>
+<tr>
+    <td><b>Marital Status</b></td>
+    <td>
+        <select name="mstatus" required>
+        <option value="">--Select--</option>
+        <option value="single">Single</option>
+        <option value="married">Married</option>
+        </select>
+    </td>
+</tr>
+<tr><td></td></tr>
+<tr>
+    <td><b>Email ID</b></td>
+    <td>
+        <input type="email" name="email" required>
+    </td>
+</tr>
+<tr><td></td></tr>
+<tr>
+    <td><b>Password</b></td>
+    <td>
+        <input type="password" name="pwd" required>
+    </td>
+</tr>
+<tr><td></td></tr>
+<tr>
+    <td><b>Contact No</b></td>
+    <td>
+        <input type="number" name="contactno" required>
+    </td>
+</tr>
+<tr><td></td></tr>
+<tr><td></td></tr>
+<tr align="center">
+    <td>
+        <input type="submit" value="Register" required>
+    </td>
+    <td>
+        <input type="reset" value="Clear" required>
+    </td>
+</tr>
+</table>
+</div>
+</body>
+</html>

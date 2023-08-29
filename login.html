@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Online Health And Nutrition Consultancy System</title>
+    <link rel="stylesheet" href="style.css">
+    
+<style>
+    .menu-bar{
+    background: rgba(100, 96, 103, 0.551);
+    text-align: center;
+}
+.menu-bar ul li:hover  .sub-menu-1{
+
+display: block;
+position: absolute;
+background:rgba(9, 9, 9, 0.299) ;
+margin-top: 15px;
+margin-left: -15px;
+
+}
+.active, .menu-bar ul li:hover 
+{
+    background:rgba(23, 24, 23, 0.963) ;
+    border-radius: 3px;
+
+}
+
+    body {
+        background-image: url("images/img9.jpg") ;
+        background-size: cover ;
+        background-position: center;
+        background-repeat: no-repeat;
+        
+      }
+  
+      .container {
+        width: 300px;
+        margin: auto;
+        margin-top: 200px;
+        padding: 20px;
+        background-color: rgba(255, 255, 255, 0.8);
+        border-radius: 5px;
+        text-align: center;
+      }
+  </style>
+
+</head>
+<body >
+    <div class="menu-bar">  
+        <ul>
+            <li><a href="#"><a href="index.html">HOME</a></li>
+            <li><a href="#"><a href="about.html">ABOUT</a></a>
+            <li class="active"><a href="#"></a><a href="login.html">LOGIN</a></a></li>
+            <li ><a href="#"></a>
+              <a href="reg.html">REGISTRATION</a>
+            </li>
+            
+            <li><a href="#"></a>
+                <a href="message.html">CONTACT</a>
+            </li>
+            
+        </ul> 
+      </div>
+<div class="container">
+<h2 align="center"><u>Login</u></h2>
+
+    <table align="center">
+        <tr>
+        </tr>
+        <tr><td></td></tr>
+        <tr>
+            <td><b>Email ID</b></td>
+            <td>
+                <input type="email" name="email" required>
+            </td>
+        </tr>
+        <tr><td></td></tr>
+        <tr>
+            <td><b>Password</b></td>
+            <td>
+                <input type="password" name="pwd" required>
+            </td>
+        </tr>
+        <tr><td></td></tr>
+        <tr><td></td></tr>
+        <tr><td></td></tr>
+        <tr align="center">
+            <td>
+                <form id="myForm" action="home.html" method="post">
+                    <input type="submit" value="Login" required>
+                   </form>
+                
+            </td>
+        
+            <td>
+                <input type="reset" value="Clear" required>
+            </td>
+        </tr>
+        </table>
+
+</div>
+
+</body>
+</html> 

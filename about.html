@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- <link rel="stylesheet" href="style.css"> -->
+<style>
+.menu-bar{
+  background-color: #6ebc3a84  ;
+    text-align: center;
+}
+
+.menu-bar ul{
+    display: inline-flex;
+    list-style: none;
+    color:white;
+}
+.menu-bar ul li{
+    width: 120px;
+    margin: 15px;
+    padding: 15px;
+}
+.menu-bar ul li a{
+    text-decoration: none;
+    color: #fff;
+}
+.active, .menu-bar ul li:hover 
+{
+    background:rgb(103, 112, 70) ;
+    border-radius: 3px;
+
+}
+.sub-menu-1
+{
+    display: none;
+}
+.menu-bar ul li:hover  .sub-menu-1{
+
+    display: block;
+    position: absolute;
+    background:rgb(176, 215, 99) ;
+    margin-top: 15px;
+    margin-left: -15px;
+
+}
+.menu-bar ul li:hover  .sub-menu-1 ul{
+    display: block;
+    margin: 10px;
+}
+.menu-bar ul li:hover .sub-menu-1 ul li{
+    width: 150px;
+    padding: 10px;
+    border-bottom: 1px dotted #fff;
+    background: transparent;
+    border-radius: 0;
+    text-align: left;
+}
+.menu-bar ul li:hover .sub-menu-1 ul li:last-child{
+    border-bottom: none;
+
+}
+.menu-bar ul li:hover .sub-menu-1 ul li a:hover{
+    color:black;
+}
+
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.column {
+  float: left;
+  width: 33.3%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: 8px;
+}
+
+.about-section {
+  padding: 10px;
+  text-align: center;
+  background-color: #6ebc3a84;
+  color: white;
+}
+
+.container {
+  padding: 0 16px;
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: grey;
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.button:hover {
+  background-color: #555;
+}
+
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+
+}
+.display-container{
+  background-size: auto;
+}
+
+h1{
+  background-color:white;
+  color: #000;
+
+}
+h3{
+  background-color:rgba(150, 135, 113, 0.214);
+  color:black;
+  font-size: 40px;
+}
+</style>
+</head>
+<body>
+  <div class="menu-bar">  
+    <ul>
+        <li ><a href="#">Home</a></li>
+        <li class="active"><a href="#"><a href="about.html">ABOUT</a></a>
+        <li><a href="#"></a>
+            <a href="login.html">LOGIN</a>
+          </a></li>
+          <li ><a href="#"></a>
+            <a href="reg.html">REGISTRATION</a>
+          </li>
+        <li>
+            <a href="#"></a>
+            <a href="dashboard.html">DASHBOARD</a>
+        </li>  
+        <li><a href="#"></a>
+            <a href="message.html">CONTACT</a>
+        </li>
+    </ul> 
+</div>
+    <div class="about-section">
+      <div class="container">
+        <h1> Diet & Care Online nutrtion consultancy</h1>
+        <h2>Online nutrition coaches work with clients to create a positive, healthy relationship with food. 
+          They look at a person's diet and lifestyle and use coaching techniques to educate and offer guidance around proper food choices.<h2></div>
+        <img class="mySlides" src="images/img19.jpeg" width="100%" height="550" >
+        <img class="mySlides" src="images/img20.jpg" width="100%" height="550">
+        <img class="mySlides" src="images/img21.jpg" width="100%" height="550">
+        <img class="mySlides" src="images/img22.jpg" width="100%" height="550">
+        
+      </div>
+      <script>
+        var myIndex = 0;
+        carousel();
+        
+        function carousel() {
+          var i;
+          var x = document.getElementsByClassName("mySlides");
+          for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";  
+          }
+          myIndex++;
+          if (myIndex > x.length) {myIndex = 1}    
+          x[myIndex-1].style.display = "block";  
+          setTimeout(carousel, 2000); // Change image every 2 seconds
+        }
+        </script>
+
+<h3 style="text-align:center">Let's see</h3>
+<div class="row">
+  <div class="column">
+    <div class="card">
+      <img src="images/img13.jpg" alt="Jane" style="width:100%">
+      <div class="container">
+        <h2>Diet based on personality</h2>
+        <p class="title">What it means?</p>
+        <p>The personality type diet is a diet developed by Dr. Robert Kushner that helps dieters identify what kind of eating, exercising, 
+            and coping habits they have to help dieters achieve weight loss and better health through personalized incremental change.</p>
+      </div>
+    </div>
+    
+    <div class="row">
+      <div class="card">
+        <img src="images/img15.png" alt="John" style="width:100%">
+        <div class="container">
+          <h2>RIYA</h2>
+          <p class="title"> Clinical Nutritionist</p>
+          <p>A nutritionist is a person who advises others on matters of food and nutrition and their impacts on health.
+               Some people specialize in particular areas, such as sports nutrition, public health, or animal nutrition, among other disciplines.</p>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+
+  
+
+  <div class="column">
+    <div class="card">
+      <img src="images/img14.jpg" alt="Mike" style="width:100%">
+      <div class="container">
+        <h2>BMI</h2>
+        <p class="title">What it means?</p>
+        <p>Body Mass Index is a person's weight in kilograms divided by the square of height in meters. 
+            A high BMI can indicate high body fatness.</p>
+       
+       
+      </div>
+    </div>
+
+    
+    <div class="row">
+      <div class="card">
+        <img src="images/img17.jpg" alt="John" style="width:100%">
+        <div class="container">
+          <h2>KIYA</h2>
+          <p class="title">Gerontological Nutritionist</p>
+          <p>A nutritionist is a person who advises others on matters of food and nutrition and their impacts on health.
+               Some people specialize in particular areas, such as sports nutrition, public health, or animal nutrition, among other disciplines.</p>
+          
+        </div>
+      </div>
+
+</div>
+
+  </div>
+
+
+    <div class="column">
+      <div class="card">
+        <img src="images/img16.webp" alt="John" style="width:100%">
+        <div class="container">
+          <h2>DIET Remainders!</h2>
+          <p class="title">we sent you diet Remainders</p>
+          <p>A balanced diet is a diet that contains differing kinds of foods in certain quantities and proportions so that the requirement for calories,
+             proteins, minerals, vitamins and alternative nutrients is adequate and a small provision is reserved for additional nutrients to endure the short length of leanness.</p>
+            </div>
+        </div>
+      </div>
+
+      
+
+        
+
+</body>
+</html>
